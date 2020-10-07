@@ -11,11 +11,13 @@ Engineering_challenge
 ********************
 
 Engineering assumptions:
+
 	1. average temptation between D & N (0400 - 1600) derived to bench mark a day's temperature
 	2. any day of month greater this benchmark is what the engineered process  identifies as "hottest day of month"
 	3. row group date/days implemented
 
 Tranformations
+
 	1. screen temperature -99 is replaces to Nan (looks to be a logical non empty value from source)
 	2. missing temperature is populated with previous & next temperature
 		1200 -> 10, 1300 -> Nan, 1500 -> 20, 1400 -> will be 15 degree
@@ -26,9 +28,11 @@ Tranformations
 	5. formatted time as required
 
 Data cleansing
+
 	1. time part stripped from observation date
 
 Modelling
+
 	1. for site & location dimension table engineered, using hash keys
 	
 	2. fact tables for each month, class module do insert foreign key to fact entity.
@@ -37,12 +41,14 @@ Modelling
 		(avg_tem) & dictionary column with all possible temperature between 0800-1600 (temperature)
 
 Testing
+
 	1. have done a limited testing to prove that this aspect is also catered in limited time while engineering solutions.
 		it was done sparingly with few csv files.
 		
 	2. more testing to be done for every method which will be an exhaustive feature on its own
 
 DevOps
+
 	1. As part of the challenge to establish familiarity in dev-ops and governance relating to production deployment where
 	
 		docker images with tags will be released.  I have built a docker image, same have been tested to host the application
@@ -51,6 +57,7 @@ DevOps
 		
 
 "test folder" contents
+
 
 	1. test folder -> have input csv file and expected csv files
 	
