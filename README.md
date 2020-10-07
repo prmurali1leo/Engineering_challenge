@@ -30,22 +30,30 @@ Data cleansing
 
 Modelling
 	1. for site & location dimension table engineered, using hash keys
+	
 	2. fact tables for each month, class module do insert foreign key to fact entity.
+	
 	3. fact aggregate to be referenced for output; each row is a combination of site & date with two cols with average temp
 		(avg_tem) & dictionary column with all possible temperature between 0800-1600 (temperature)
 
 Testing
 	1. have done a limited testing to prove that this aspect is also catered in limited time while engineering solutions.
 		it was done sparingly with few csv files.
+		
 	2. more testing to be done for every method which will be an exhaustive feature on its own
 
 DevOps
 	1. As part of the challenge to establish familiarity in dev-ops and governance relating to production deployment where
+	
 		docker images with tags will be released.  I have built a docker image, same have been tested to host the application
+		
 		results of docker build success, image name etc have been added as evidences to the folder.
+		
 
 "test folder" contents
+
 	1. test folder -> have input csv file and expected csv files
+	
 	2. docker build and running the solutions, output is redirected and available to view.
 		1. test_app_run_output_from_docker.txt, test_docker_build_out.txt
 	3. test script run results evidence in test_results.txt
