@@ -1,0 +1,14 @@
+============================= test session starts ==============================
+platform darwin -- Python 3.7.7, pytest-5.4.2, py-1.8.1, pluggy-0.13.1
+rootdir: /Users/murali_mac/Python_code/DLG_Test
+collected 3 items
+
+test_init.py ...                                                         [100%]
+
+=============================== warnings summary ===============================
+test_init.py:8
+  /Users/murali_mac/Python_code/DLG_Test/test_init.py:8: FutureWarning: pandas.util.testing is deprecated. Use the functions in the public API at pandas.testing instead.
+    from pandas.util.testing import assert_frame_equal
+
+-- Docs: https://docs.pytest.org/en/latest/warnings.html
+========================= 3 passed, 1 warning in 0.52s =========================

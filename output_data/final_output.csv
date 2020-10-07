@@ -1,0 +1,2 @@
+ObservationDate,avg_temp,Temperature,Region,Country,ForecastSiteCode,SiteName,Latitude,Longitude
+2016-02-21,13.866666666666665,"{'08:00': 11.8, '09:00': 12.0, '10:00': 13.0, '11:00': 13.9, '12:00': 14.4, '13:00': 15.1, '14:00': 14.6, '15:00': 15.1, '16:00': 14.9}",South West England,ENGLAND,3839,EXETER AIRPORT,50.737,-3.405

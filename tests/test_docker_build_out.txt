@@ -1,0 +1,26 @@
+Sending build context to Docker daemon  395.3MB
+Step 1/8 : FROM python:3.7
+ ---> 11c6e5fd966a
+Step 2/8 : ENV PYTHONUNBUFFERED 1
+ ---> Using cache
+ ---> ba8470faaf77
+Step 3/8 : RUN mkdir /prod_env
+ ---> Using cache
+ ---> 7ea328cd8c1f
+Step 4/8 : WORKDIR /prod_env
+ ---> Using cache
+ ---> 16da52843a57
+Step 5/8 : COPY requirements.txt .
+ ---> Using cache
+ ---> e388538f4953
+Step 6/8 : RUN pip install -r requirements.txt
+ ---> Using cache
+ ---> 1e63c25ee6b8
+Step 7/8 : COPY . /prod_env/
+ ---> 6aa3903d0e78
+Step 8/8 : CMD ["python" , "./app.py"]
+ ---> Running in e371e7e0c943
+Removing intermediate container e371e7e0c943
+ ---> 68e9061e57d4
+Successfully built 68e9061e57d4
+Successfully tagged dl_inst:0.0.2

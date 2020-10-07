@@ -1,0 +1,14 @@
+======================================================================================
+======================================================================================
+Highest temperature was recorded on 0    2016-02-21
+Name: ObservationDate, dtype: object
+0    2016-02-21
+Name: ObservationDate, dtype: object
+The average temperature on that Day from 8am to 4pm was 0    13.866667
+Name: avg_temp, dtype: float64
+The temperature from 8am to 4pm was 0    {'08:00': 11.8, '09:00': 12.0, '10:00': 13.0, ...
+Name: Temperature, dtype: object
+The hottest region was 0    South West England
+Name: Region, dtype: object
+======================================================================================
+======================================================================================
